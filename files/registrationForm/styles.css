@@ -1,0 +1,81 @@
+﻿body {
+    font-size: 8px;
+    background-color: rgba(242, 242, 242, 1);
+    margin: 0;
+    font-family: 'Arial Полужирный', 'Arial Обычный', 'Arial', sans-serif;
+}
+.myButton {
+    position: absolute;
+    top:21em;
+    left:2em;
+    box-shadow:inset 0px 1px 9px -9px #97c4fe;
+    background-color:#3d94f6;
+    border-radius:8px;
+    border:1px solid #337fed;
+    cursor:pointer;
+    color:#ffffff;
+    font-size:3em;
+    font-weight:bold;
+    padding: 1em 2em;
+    height: 1em;
+    text-decoration:none;
+    display: flex;
+}
+.myButton:hover {
+    background-color:#1e62d0;
+}
+.myButton:active {
+    top:21.05em;
+}
+
+#form {
+    position: absolute;
+    width: 60em;
+    height: 75em;
+    background-color: white;
+    border-style: solid;
+    border-color: rgba(14, 11, 35, 0.17);
+    border-radius: 1em;
+    left: calc(50% - 30em);
+    top: 7em;
+    display: flex;
+}
+
+.input {
+    position: absolute;
+    padding-left: .5em;
+    padding-right: .5em;
+    border: none;
+    margin: 0;
+    font-size: 3em;
+    font-weight: 700;
+    font-style: normal;
+    outline: none;
+    width: 13em;
+    height: 2em;
+    display: flex;
+}
+
+.input:focus {
+    transition: 0.2s;
+    border-bottom: solid dodgerblue .1em;
+}
+
+.input:focus::placeholder {
+    visibility: hidden;
+}
+
+.input:not(focus)::placeholder {
+    visibility: visible;
+}
+
+.input:not(focus) {
+    transition: 0.2s;
+    border-bottom: solid black .1em;
+}
+
+.icon{
+    height: 13em;
+    width: 13em;
+    margin: 0 1em;
+}
