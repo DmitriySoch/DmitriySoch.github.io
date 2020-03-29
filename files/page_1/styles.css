@@ -1,13 +1,7 @@
 ﻿body {
-  margin:0px;
+  margin:0 auto;
   background-color:rgba(242, 242, 242, 1);
-  background-image:none;
-  position:relative;
-  left:-38px;
-  width:1361px;
-  margin-left:auto;
-  margin-right:auto;
-  text-align:left;
+  font-size: 8px;
 }
 .form_sketch {
   border-color:transparent;
@@ -17,54 +11,18 @@
   position:absolute;
   z-index:0;
 }
-#u0 {
-  border-width:0px;
-  position:absolute;
-  left:0px;
-  top:0px;
-  width:0px;
-  height:0px;
-}
-#u1_div {
-  border-width:0px;
-  position:absolute;
-  left:0px;
-  top:0px;
-  width:1361px;
-  height:67px;
-  background:inherit;
-  background-color:rgba(255, 255, 255, 1);
-  box-sizing:border-box;
-  border-width:1px;
+#header {
+  border-width:0 1px 1px 1px;
   border-style:solid;
-  border-color:rgba(121, 121, 121, 1);
-  border-radius:0px;
-  -moz-box-shadow:none;
-  -webkit-box-shadow:none;
-  box-shadow:none;
-}
-#u1 {
-  border-width:0px;
-  position:absolute;
-  left:38px;
-  top:0px;
-  width:1361px;
+  position:fixed;
+  width: 100vw;
   height:67px;
   display:flex;
-}
-#u1 .text {
-  position:absolute;
-  align-self:center;
-  padding:2px 2px 2px 2px;
+  background-color:#7AB660;
   box-sizing:border-box;
-  width:100%;
+  border-color:black;
 }
-#u1_text {
-  border-width:0px;
-  word-wrap:break-word;
-  text-transform:none;
-  visibility:hidden;
-}
+
 #u2_div {
   border-width:0px;
   position:absolute;
@@ -261,7 +219,7 @@
   left:0px;
   top:0px;
   width:1028px;
-  height:661px;
+  height:561px;
   background:inherit;
   background-color:rgba(255, 255, 255, 1);
   box-sizing:border-box;
@@ -279,7 +237,7 @@
   left:38px;
   top:116px;
   width:1028px;
-  height:661px;
+  height:561px;
   display:flex;
 }
 #u8 .text {
@@ -301,7 +259,7 @@
   left:0px;
   top:0px;
   width:300px;
-  height:661px;
+  height:561px;
   background:inherit;
   background-color:rgba(255, 255, 255, 1);
   box-sizing:border-box;
@@ -319,7 +277,7 @@
   left:1098px;
   top:116px;
   width:300px;
-  height:661px;
+  height:561px;
   display:flex;
 }
 #u9 .text {
@@ -349,7 +307,7 @@
   left:0px;
   top:0px;
   width:471px;
-  height:661px;
+  height:561px;
   background:inherit;
   background-color:rgba(149, 242, 4, 1);
   box-sizing:border-box;
@@ -367,7 +325,7 @@
   left:-516px;
   top:116px;
   width:471px;
-  height:661px;
+  height:561px;
   display:flex;
 }
 #u11 .text {
