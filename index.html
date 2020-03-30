@@ -1,33 +1,46 @@
 ﻿<!DOCTYPE html>
 <html lang="ru">
 <head>
-    <title>Регистрация</title>
+    <title>Game</title>
     <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
-    <link href="files/registrationForm/styles.css" type="text/css" rel="stylesheet"/>
+    <link href="files/game/styles.css" type="text/css" rel="stylesheet"/>
 </head>
 <body>
-<form id="form" class="">
-    <h2 style="top: .5em; left: 3.5em; position: absolute; font-size: 6em; margin: 0 auto">Войти</h2>
-    <input class="input" style="top: 5em; left: 3em;" id="registrationForm" type="text" value="" placeholder="Email"
-           required/>
-    <input class="input" style="top: 9em; left: 3em;" id="password" type="password" value="" placeholder="Password"
-           required/>
-    <div style="position: absolute; top: 36em; left: 3em; border: none; background: darkgray; width: 90%; height: .125em"></div>
-    <h3 style="margin: 0; position: absolute; left: 5.2em; top:12.5em; font-size:3em; ">Или через соцсети</h3>
-    <table style="position: absolute; left:7em; top:42.5em">
+<header id="header" style="z-index: 10">
+    <div class="container">
+        <a style="margin:0 3em; text-decoration: none; color: black" href="main.html">
+            <div style="margin: 2em"><h1 style="font-size: 3em;">Главная</h1></div>
+        </a>
+        <a style="margin:0 3em;text-decoration: none; color: black" href="create.html">
+            <div style="margin: 2em"><h1 style="font-size: 3em;">Создать</h1></div>
+        </a>
+        <a style="margin:0 3em;text-decoration: none; color: black" href="rating.html">
+            <div style="margin: 2em"><h1 style="font-size: 3em;">Рейтинговая таблица</h1></div>
+        </a>
+        <div style="flex-grow: 2"></div>
+        <a class="playerContainer" style="margin:0 2em;text-decoration: none; color: black" href="registrationForm.html">
+            <h1 style="font-size: 3em;">Игрок</h1>
+            <img src="images/game/account.svg" style="width:5em; height: 5em; margin: 0 1em">
+        </a>
+    </div>
+</header>
+<main class="container" style="width: 98%; margin-top: 8em; ">
+    <table style="width: 100%; height: 100%; top: 0;" >
         <tr>
-            <td><a href="http:\\www.vk.com/"><img class="icon" src="images/registrationForm/vk_Icon.svg"></a></td>
-            <td><a href="http:\\www.google.com/"><img class="icon" src="images/registrationForm/google_Icon.svg"></a></td>
-            <td><a href="http:\\www.facebook.com/"><img class="icon" src="images/registrationForm/facebook_Icon.svg"></a></td>
+            <td style="width: 78%">
+                <canvas id="myCanvas" class="mainCanvas" onmouseout="mouseOut(event)" onmousedown="mouseDown(event)"
+                        onmouseup="mouseOut(event)" onmousemove="moveMouse(event)" style="height: 80em; width: 147em"></canvas>
+                <script src="files/game/canvasPaint.js"></script>
+            </td>
+            <td style="width: 20%">
+                <div class="chat_Container">
+
+                </div>
+            </td>
         </tr>
     </table>
-    <a href="#" type="submit" class="myButton">Войти</a>
-    <span style="position: absolute; font-size: 2em; left:15em; top:32em;">
-        Нет аккаунта? &nbsp <a href="\registration" style="display: inline-block"><h4 style="text-decoration: underline;">Регистрация</h4></a>
-    </span>
-
-</form>
-
-
+</main>
+<footer>
+</footer>
 </body>
 </html>
