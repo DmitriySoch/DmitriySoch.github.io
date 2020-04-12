@@ -4,7 +4,12 @@
     margin: 0;
     font-family: 'Arial Полужирный', 'Arial Обычный', 'Arial', sans-serif;
 }
-.myButton {
+
+.myButtonUp:active {
+    top:17.05em;
+}
+
+.myButtonIn,.myButtonUp {
     position: absolute;
     top:21em;
     left:2em;
@@ -21,14 +26,18 @@
     text-decoration:none;
     display: flex;
 }
-.myButton:hover {
+.myButtonUp {
+    top:17em;
+    left:4.5em;
+}
+.myButtonUp,.myButtonIn:hover {
     background-color:#1e62d0;
 }
-.myButton:active {
+.myButtonIn:active {
     top:21.05em;
 }
 
-#form {
+#formIn,#formUp {
     position: absolute;
     width: 60em;
     height: 75em;
@@ -39,6 +48,9 @@
     left: calc(50% - 30em);
     top: 7em;
     display: flex;
+}
+#formUp{
+    height: 65em;
 }
 
 .input {
